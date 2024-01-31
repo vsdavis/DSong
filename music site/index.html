@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styless.css">
+    <title>DSong | Login</title>
+</head>
+
+<body>
+    <section>
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required>
+                <label for="">Senha</label>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">Lembre-me</label>
+                <a href="#">Esqueceu a senha</a>
+            </div>
+            <button type="submit">Log in</button>
+            <div class="register">
+                <p>Não tem conta? <a href="#">Se registre</a></p>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            // Adicione aqui a lógica para processar os dados do formulário
+            
+            // Redirecionar para a outra página após o envio do formulário
+            window.location.href = "home/index.html";
+        });
+    </script>
+</body>
+</html>
+
